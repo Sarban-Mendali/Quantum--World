@@ -1,0 +1,267 @@
+:root {
+    --primary-blue: #007bff;
+    --light-blue: #e6f0ff;
+    --dark-grey: #333;
+    --text-color: #555;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--dark-grey);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--dark-grey);
+    margin-bottom: 15px;
+}
+
+.main-header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-top {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Small Logo in Top Bar */
+.small-logo-link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--dark-grey);
+}
+.small-logo {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.top-nav ul {
+    display: flex;
+}
+
+.top-nav li a {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: black;
+}
+.top-nav li a :hover {
+    background-color: #cacfd4;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 0.9em;
+}
+
+.search-box button {
+    background: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.search-box button:hover {
+    background: #0056b3;
+}
+
+
+/* Hero Section (Main Logo Area) */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(to right, #f8f9fa, #fff);
+}
+
+.main-logo {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--dark-grey);
+}
+
+.tagline {
+    color: var(--primary-blue);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* --- Main Content Sections --- */
+
+
+
+/* Feature Grid */
+.features-grid {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features-grid .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-blue);
+    font-size: 24px;
+    border: 3px solid var(--primary-blue);
+}
+
+/* Applications Section */
+.applications-section {
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+
+.applications-section .container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.app-image-wrapper {
+    flex: 1;
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.app-content {
+    flex: 1;
+}
+
+.app-content h2 {
+    color: var(--primary-blue);
+    font-size: 2em;
+}
+
+.app-links {
+    margin-top: 20px;
+}
+
+.app-link {
+    display: inline-block;
+    background: var(--dark-grey);
+    color: #fff;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.app-link:hover {
+    background: var(--primary-blue);
+}
+
+.app-link .fas {
+    margin-right: 5px;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background: var(--dark-grey);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-logo {
+    width: 150px;
+    /* This filter turns the blue logo white */
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(0, 123, 255, 0.8));
+    margin-bottom: 10px;
+}
+
+.main-footer .tagline {
+    color: #aaa;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary-blue);
+}
