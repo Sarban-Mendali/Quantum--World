@@ -254,19 +254,20 @@ h1, h2, h3 {
     text-align: center;
     padding: 30px 0;
 }
-
-.footer-logo {
-    width: 150px;
-    /* This filter turns the blue logo white */
-    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(0, 123, 255, 0.8));
-    margin-bottom: 10px;
+.timeline-item {
+    background-color: #fff; /* Light background */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s, ;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+            
 }
-
-.main-footer .tagline {
-    color: #aaa;
-    margin-bottom: 15px;
-    font-size: 0.9em;
-}
+.timeline-item{
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgb(175, 213, 248); /* Blue shadow on hover */
+        }
 
 .social-links a {
     color: #fff;
