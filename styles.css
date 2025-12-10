@@ -176,19 +176,20 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.feature-icon {
+.feature-icon{
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
     background: var(--light-blue);
     border-radius: 50%;
-    display: flex;
+    display: center;
     justify-content: center;
     align-items: center;
     color: var(--primary-blue);
     font-size: 24px;
     border: 3px solid var(--primary-blue);
 }
+
 
 /* Applications Section */
 .applications-section {
@@ -733,6 +734,7 @@ h1, h2, h3 {
             color: var(--dark-grey);
             margin: 0;
             font-size: 1.3em;
+            
         }
 
         .material-feature-card p {
