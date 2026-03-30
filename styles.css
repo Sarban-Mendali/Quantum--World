@@ -87,18 +87,38 @@ h1, h2, h3 {
     margin-right: 8px;
 }
 
-.top-nav ul {
-    display: flex;
+/* From Uiverse.io by akshat-patel28 */ 
+.button-container {
+  display: flex;
+  background-color: transparent;
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  }
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a7d6e4;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 
-.top-nav li a {
-    padding: 0 15px;
-    font-size: 0.9em;
-    color: rgb(0, 0, 0);
+.button:hover {
+  transform: translateY(-3px);
 }
-.top-nav li a :hover {
-    background-color:transparent;
-    color: #a7d6e4;
+
+.icon {
+  font-size: 20px;
 }
 
 .search-box {
